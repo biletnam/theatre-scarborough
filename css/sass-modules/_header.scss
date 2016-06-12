@@ -1,0 +1,281 @@
+.container-fluid,
+.page-header {
+	margin: 0;
+	padding: 0;
+	border: none;
+	overflow: hidden;
+	h1 {
+		margin: 30px 0;
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+.quick-links {
+	background: $links;
+	padding: 10px;
+	color: white;
+	text-align: right;
+	span {
+		font-size: 1.25em;
+	}
+	a {
+		display: inline-block;
+		color: white;
+		margin: 5px;
+		-webkit-transition: all .5s;
+		        transition: all .5s;
+		font-size: 1.25em;
+		text-align: center;
+		@include anchor-box (white, $links);
+		.breakTag {
+			display: none;
+		}
+	}
+	a:last-child,
+	.fa-bars {
+		display: none;
+	}
+}
+.main-nav {
+	font-family: 'engebrechtrebold', sans-serif;
+	font-size: 0;
+	> li {
+		width: 20%;
+		vertical-align: middle;
+		> a {
+			display: block;
+			font-size: 28px;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.dropdown, .dropped {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	display: none;
+	font-family: 'engebrechtrebold', sans-serif;
+	li {
+		vertical-align: middle;
+		&:last-child > a {
+			border: none;
+		}
+	}
+	a {
+		display: block;
+		padding: 20px 15px;
+		font-size: 22px;
+		border-right: 1px solid black;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.home {
+	background: $home-bg;
+	> a {
+		line-height: 110px;
+	}
+	a:hover {
+		color: black;
+	}
+}
+.smt {
+	background: $smt-bg;
+	color: $smt-txt;
+	> a {
+		padding: 15px 0;
+		color: $smt-txt;
+	}
+	> li > a {
+		color: $smt-txt;
+		height: 133px;
+		padding: 20px 15px;
+	}
+}
+.sp {
+	background: $sp-bg;
+	color: $sp-txt;
+	> a {
+		padding: 15px 0;
+		color: $sp-txt;
+	}
+	> li > a {
+		color: $sp-txt;
+		padding: 20px 15px;
+	}
+}
+.stg {
+	background: $stg-bg;
+	color: $stg-txt;
+	> a {
+		padding: 15px 0;
+		color: $stg-txt;
+	}
+	> li > a {
+		color: $stg-txt;
+		height: 90px;
+		padding: 20px 15px;
+	}
+}
+.gi {
+	background: $gi-bg;
+	> a {
+		line-height: 110px;
+	}
+	a {
+		color: white;
+	}
+}
+@media screen AND (max-width: 1200px) {
+	.main-nav {
+		> li {
+			> a {
+				font-size: 24px;
+			}
+		}
+		.home > a,
+		.gi > a {
+			padding: 40px 0;
+			line-height: 18px;
+		}
+	}
+	.dropdown, .dropped {
+		a {
+			font-size: 16px;
+			border-right: 1px solid black;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.smt > li > a {
+		height: 100px;
+	}
+	.stg > li > a {
+		height: 80px;
+	}
+}
+@media screen AND (max-width: 992px) {
+	.quick-links {
+		text-align: center;
+		span {
+			display: none;
+		}
+		a {
+			font-size: 1.5em;
+		}
+	}
+	.main-nav {
+		> li {
+			> a {
+				font-size: 20px;
+			}
+		}
+		.home > a,
+		.gi > a {
+			padding: 35px 0;
+			line-height: 16px;
+		}
+	}
+	.dropdown, .dropped {
+		left: auto;
+		width: 20%;
+		> li {
+			display: block;
+			border-bottom: 1px solid black;
+			&:last-child {
+				border: none;
+			}
+			a {
+				height: auto;
+				padding: 7px;
+				border: none;
+			}
+		}
+	}
+}
+@media screen AND (max-width: 768px) {
+	.page-header {
+		h1 {
+			margin: 20px auto;
+		}
+	}
+	.quick-links {
+		a {
+			margin: 2px;
+			font-size: 1em;
+			vertical-align: middle;
+			.breakTag {
+				display: block;
+			}
+		}
+		a:last-child {
+			display: inline-block;
+			padding: 0;
+			border: none;
+			&:hover {
+				background: $links;
+				color: white;
+			}
+		}
+		.fa-bars {
+			display: inline-block;
+			margin: 0 10px;
+			font-size: 1.5em;
+			-webkit-transition: all .5s;
+			        transition: all .5s;
+			&:hover {
+				background: white;
+				color: $links;
+			}
+		}
+	}
+	.main-nav {
+		display: none;
+		> li {
+			display: block;
+			width: 100%;
+			a {
+				padding: 5px 0;
+				font-size: 24px;
+				br {
+					display: none;
+				}
+			}
+		}
+		.home > a,
+		.gi > a {
+			padding: 0;
+		}
+	}
+	.dropdown, .dropped {
+		width: 100%;
+		> li > a {
+			font-size: 20px;
+		}
+	}
+}
+@media screen AND (max-width: 400px) {
+	.quick-links {
+		a {
+			font-size: .75em;
+		}
+		a:last-child {
+			display: block;
+			margin-top: 10px;
+		}
+	}
+}

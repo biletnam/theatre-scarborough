@@ -1,0 +1,71 @@
+.footer {
+	background: $links;
+	padding: 20px;
+	.row {
+		.footer-box {
+			border: 5px solid white;
+			overflow: hidden;
+			a {
+				display: block;
+				color: white;
+				font-size: 1.5em;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			.inner-heading {
+				font-size: 1.75em;
+			}
+			h4 {
+				padding: 10px;
+				color: white;
+				font-size: 3em;
+			}
+			table {
+				width: 100%;
+				th {
+					font-size: 1.5em;
+					text-align: center;
+				}
+				td > a {
+					padding: 0;
+				}
+				.fa {
+					-webkit-transition: all .4s;
+					        transition: all .4s;
+				}
+				a:hover .fa {
+					text-shadow: 0.7px 0.7px black;
+				}
+			}
+		}
+	}
+}
+.copy {
+	background: #000122;
+	color: white;
+	p {
+		padding: 30px 15px 15px;
+		font-size: 1.25em;
+	}
+}
+@media screen AND (max-width: 1200px) {
+	.footer {
+		.row {
+			.footer-box {
+				margin: 10px 0;
+				a {
+					font-size: 1.4em;
+				}
+				h4 {
+					font-size: 2em;
+				}
+			}
+		}
+	}
+	.copy {
+		p {
+			font-size: 1em;
+		}
+	}
+}

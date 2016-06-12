@@ -1,0 +1,121 @@
+Theatre Scarborough Web Site File & Folder Structure
+|
+Root Folder
+|
+|-- index.php             							# Landing Page
+|-- header.php            							# Header (To be embedded in all pages)
+|-- footer.php            							# Footer (To be embedded in all pages)
+|
+|	* Home
+|
+|-- home-season.php        							# Season 2015/2016
+|-- home-boxoffice.php     							# Box Office
+|-- home-maps.php          							# Maps & Directions
+|-- home-history.php       							# History
+|-- home-privacy.php       							# Privacy Policy
+|
+|	* Scarborough Music Theatre
+|
+|-- smt-announcement.php  							# SMT Landing Page
+|-- smt-show_1.php        							# Anne of Green Gables
+|-- smt-show_2.php        							# 25th Annual Putnam County Spelling Bee
+|-- smt-show_3.php        							# Damn Yankees
+|-- smt-camp.php									# SMT Summer Day Camp
+|-- smt-on_the_town.php    							# SMTers On The Town
+|-- smt-archive.php       							# Archive
+|-- smt-gallery.php       							# Gallery
+|
+|	* Scarborough Players
+|
+|-- sp-announcement.php  							# SP Landing Page
+|-- sp-show_1.php        							# Alone Together
+|-- sp-show_2.php        							# Parfumerie
+|-- sp-show_3.php        							# 1949
+|-- sp-show_4.php        							# Calendar Girls
+|-- sp-gallery.php       							# Gallery
+|
+|	* Scarborough Theatre Guild
+|
+|-- stg-announcement.php  							# STG Landing Page
+|-- stg-show_1.php        							# Don't Dress For Dinner
+|-- stg-show_2.php        							# Tribute
+|-- stg-show_3.php        							# The Maltese Bodkin
+|-- stg-show_4.php        							# White Sheep Of The Family
+|-- stg-gallery.php       							# Gallery
+|
+|	* Get Involved
+|
+|-- involve-volunteering.php  							# Volunteering
+|-- involve-volunteering.php   							# Auditions
+|-- involve-contact.php       							# Contact Information
+|
+|	* Images
+|
+|-- img
+|	|-- random-backgrounds							# Background Images for All Pages
+|	|-- season-shows								# Posters for Season Info Page
+|	|-- slideshow         							# Images for Slideshow
+|	|-- smt               							# Images for SMT Gallery Page
+|		|-- gallery 								# Images for Gallery
+|	|-- sp                							# Images for SP Gallery Page
+|		|-- gallery 								# Images for Gallery
+|	|-- stg               							# Images for STG Gallery Page
+|		|-- gallery 								# Images for Gallery
+|
+|	* PDF Files
+|
+|-- docs											# PDF Documents
+|
+|	* CSS
+|
+|-- css
+|	|-- main.css               						# Main stylsheet for all pages
+|													(Don't Edit, Edit the SASS files with .scss extension)
+|	|-- main.scss									# Root SASS File
+|	|-- sass-modules								# Contains Sass Modules (Edit Files in This Folder)
+|		|-- _common-theatre.scss					# Common Styles for All Theatre Pages
+|		|-- _footer.scss							# Styles for footer.php
+|		|-- _gallery.scss							# Styles for Each Theatre Gallery Page
+|		|-- _header.scss							# Styles for header.php
+|		|-- _home_boxoffice.scss					# Styles for home-boxoffice.php
+|		|-- _home_history.scss						# Styles for home-history.php
+|		|-- _home_maps.scss							# Styles for home-maps.php
+|		|-- _home_privacy.scss						# Styles for home-privacy.php
+|		|-- _home_season.scss						# Styles for home-season.php
+|		|-- _index.scss								# Styles for index.php
+|		|-- _involve.scss							# Styles for involve-volunteering.php and involve-contact.php
+|		|-- _mixins.scss							# Contains SASS Mixins
+|		|-- _shows.scss								# Styles for Each Theatre Show Page
+|		|-- _smt-announcement.scss					# Styles for All Pages Under SMT
+|		|-- _sp-announcement.scss					# Styles for All Pages Under SP
+|		|-- _stg-announcement.scss					# Styles for All Pages Under STG
+|		|-- _variables.scss							# Contains SASS Variables
+|	|-- bootstrap-theme.css     					# Bootstrap Files (Don't Edit)
+|	|-- bootstrap-theme.css.map 					# Bootstrap Files (Don't Edit)
+|	|-- bootstrap-theme.min.css 					# Bootstrap Files (Don't Edit)
+|	|-- bootstrap.css 								# Bootstrap Files (Don't Edit)
+|	|-- bootstrap.css.map 							# Bootstrap Files (Don't Edit)
+|	|-- bootstrap.min.css 							# Bootstrap Files (Don't Edit)
+|
+|	* JavaScript
+|
+|-- js
+|	|-- main.js           							# Main JavaScript File
+|	|-- vendor            							# Plugins & Libraries (Don't Edit)
+|		|-- bootstrap.js							# Bootstrap Bundle JS
+|		|-- bootstrap.min.js						# Bootstrap Bundle JS
+|		|-- gmaps.min.js							# Gmaps Plugin
+|		|-- jquery_1.11.2.min.js 					# jQuery
+|		|-- jquery.hoverIntent.minified.js 			# hoverIntent Plugin
+|		|-- jquery.magnific-popup.min.js 			# Magnific-Popup Plugin
+|		|-- modernizr-2.8.3-respond-1.4.2.min.js 	# Modernizr Plugin
+|		|-- npm.js 									# Bootstrap Bundle JS
+|
+|	* Fonts
+|
+|-- fonts
+|	|-- engebrechtre 								# Engebrechtre Fonts Folder (Don't Edit)
+|	|-- glyphicons-halflings-regular.eot
+|	|-- glyphicons-halflings-regular.svg
+|	|-- glyphicons-halflings-regular.ttf
+|	|-- glyphicons-halflings-regular.woff

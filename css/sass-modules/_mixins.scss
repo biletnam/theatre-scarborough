@@ -1,0 +1,14 @@
+@mixin anchor-box ($text, $bg) {
+	padding: 5px 10px;
+	border: 1px solid $text;
+	-webkit-transition: all .5s;
+	        transition: all .5s;
+	&:hover {
+		background: $text;
+		color: $bg;
+	}
+}
+@mixin background-transparency ($color, $opacity) {
+	background: $color;
+    background: rgba($color, $opacity);
+}

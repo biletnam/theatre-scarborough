@@ -1,0 +1,15 @@
+#history {
+	.row {
+		img {
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
+}
+@media screen AND (max-width: 768px) {
+	#history {
+		.row {
+			display: none;
+		}
+	}
+}

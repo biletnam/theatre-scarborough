@@ -1,0 +1,100 @@
+.mainBody {
+	padding: 80px 0;
+	.container {
+		padding: 50px;
+		border-radius: 10px;
+		h2 {
+			margin-bottom: 50px;
+			font-size: 4em;
+		}
+		h3 {
+			margin: 15px 0;
+			font-size: 2.75em;
+		}
+		p {
+			margin: 20px 0;
+			font-size: 1em;
+			text-align: left;
+		}
+		img {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+	div.home {
+		@include background-transparency ($home-bg, 0.9);
+	}
+	div.smt {
+		@include background-transparency ($smt-bg, 0.9);
+		h2,
+		h3,
+		p {
+			color: $smt-txt;
+		}
+	}
+	div.sp {
+		@include background-transparency ($sp-bg, 0.9);
+		h2,
+		h3,
+		p {
+			color: $sp-txt;
+		}
+	}
+	div.stg {
+		@include background-transparency ($stg-bg, 0.9);
+		h2,
+		h3,
+		p {
+			color: $stg-txt;
+		}
+	}
+	div.gi {
+		@include background-transparency ($gi-bg, 0.9);
+		h2,
+		h3,
+		p {
+			color: black;
+		}
+	}
+}
+//@media screen AND (max-width: 1200px)
+@media screen AND (max-width: 992px) {
+	.mainBody {
+		padding: 0;
+		.container {
+			width: 100%;
+			padding: 25px;
+			border-radius: 0;
+			h2 {
+				margin-bottom: 25px;
+				font-size: 3.5em;
+			}
+			h3 {
+				font-size: 2.25em;
+			}
+			p {
+				margin: 15px 0;
+			}
+			img {
+				width: 80%;
+			}
+		}
+	}
+}
+@media screen AND (max-width: 768px) {
+	.mainBody {
+		margin-top: 0;
+		.container {
+			h2 {
+				font-size: 2.75em;
+			}
+			h3 {
+				margin: 10px 0;
+				font-size: 1.5em;
+			}
+			img {
+				width: 60%;
+			}
+		}
+	}
+}

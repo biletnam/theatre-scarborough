@@ -1,0 +1,19 @@
+#spAnn {
+	.row {
+		.col-md-6 {
+			p {
+				font-size: 1em;
+				text-align: center;
+				border: 1px solid $sp-txt;
+				a {
+					display: block;
+					color: $sp-txt;
+					@include anchor-box ($sp-txt, $sp-bg);
+					i {
+						margin: 0 20px;
+					}
+				}
+			}
+		}
+	}
+}

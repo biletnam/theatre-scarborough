@@ -1,0 +1,36 @@
+#stg {
+	iframe#fbLike {
+		margin-top: 15px;
+	}
+	p {
+		a {
+			display: block;
+			color: $stg-txt;
+			@include anchor-box ($stg-txt, $stg-bg);
+		}
+	}
+	.row {
+		.col-sm-6 {
+			margin-bottom: 30px;
+		}
+	}
+	form {
+		text-align: left;
+		h3 {
+			margin: 0;
+			font-family: 'engebrechtrebold', sans-serif;
+			font-size: 1.5em;
+		}
+		p {
+			margin: 10px 0;
+			color: $stg-txt;
+			font-size: 1em;
+			.asterisk {
+				text-decoration: underline;
+			}
+		}
+		input.button {
+			margin-top: 10px;
+		}
+	}
+}

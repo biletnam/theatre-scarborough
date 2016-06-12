@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,700,400);
+@font-face {
+	font-family: 'engebrechtrebold';
+	src: url('../fonts/engebrechtre/engebrechtre_bd-webfont.eot');
+	src: url('../fonts/engebrechtre/engebrechtre_bd-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/engebrechtre/engebrechtre_bd-webfont.woff2') format('woff2'),
+		 url('../fonts/engebrechtre/engebrechtre_bd-webfont.woff') format('woff'),
+		 url('../fonts/engebrechtre/engebrechtre_bd-webfont.ttf') format('truetype'),
+		 url('../fonts/engebrechtre/engebrechtre_bd-webfont.svg#engebrechtrebold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	background: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: 'engebrechtrebold', sans-serif;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: black;
+	border-radius: 0;
+	&:hover,
+	&:focus {
+		background: none;
+		text-decoration: none;
+	}
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+ul li {
+	display: inline-block;
+}
+.fa-facebook-square {
+	color: #3A5795;
+}
+.fa-twitter-square {
+	color: #55ACEE;
+}
+.fa-rss-square {
+	color: #F6842C;
+}
+.fa-google-plus-square {
+	color: #DD4B39;
+}
+.page-header {
+	background: white;
+}
+@import "sass-modules/mixins.scss";
+@import "sass-modules/variables.scss";
+@import "sass-modules/header.scss";
+@import "sass-modules/footer.scss";
+@import "sass-modules/index.scss";
+@import "sass-modules/common-theatre.scss";
+@import "sass-modules/home-season.scss";
+@import "sass-modules/home-boxoffice.scss";
+@import "sass-modules/home-maps.scss";
+@import "sass-modules/home-history.scss";
+@import "sass-modules/home-privacy.scss";
+@import "sass-modules/involve.scss";
+@import "sass-modules/smt-announcement.scss";
+@import "sass-modules/sp-announcement.scss";
+@import "sass-modules/stg-announcement.scss";
+@import "sass-modules/gallery.scss";
+@import "sass-modules/shows.scss";

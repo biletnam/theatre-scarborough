@@ -1,0 +1,171 @@
+.carousel {
+	.slidebg {
+		width: 100%;
+	}
+	.carousel-caption {
+		background: rgba(0,0,0,0.7);
+		left: 10%;
+		right: 10%;
+		h2 {
+			margin: 20px;
+			font-size: 4em;
+		}
+		.poster {
+			display: inline-block;
+			width: 30%;
+			padding-right: 20px;
+			vertical-align: top;
+		}
+		.content {
+			display: inline-block;
+			width: 65%;
+			h3 {
+				margin: 20px auto;
+				font-size: 2.25em;
+			}
+			p {
+				font-size: 1em;
+				text-align: left;
+			}
+		}
+		a {
+			display: inline-block;
+			color: white;
+			padding: 5px 10px;
+			margin: 20px;
+			font-size: 2em;
+			border: 1px solid white;
+			-webkit-transition: all .5s;
+			        transition: all .5s;
+			&:hover {
+				background: white;
+				color: black;
+			}
+		}
+	}
+}
+.main-news {
+	background: white;
+	h2 {
+		margin: 30px;
+		font-size: 4em;
+	}
+	h3 {
+		padding: 15px;
+		font-size: 3em;
+	}
+	img {
+		margin: 20px auto;
+	}
+	p {
+		padding: 20px;
+		font-size: 1em;
+		text-align: left;
+	}
+}
+@media screen AND (max-width: 1200px) {
+	.carousel {
+		.carousel-caption {
+			h2 {
+				font-size: 2.75em;
+			}
+			.content {
+				h3 {
+					margin: 10px auto;
+					font-size: 2em;
+				}
+				p {
+					font-size: 1em;
+				}
+			}
+			a {
+				margin: 20px;
+				font-size: 1.25em;
+			}
+		}
+	}
+}
+@media screen AND (max-width: 992px) {
+	.carousel {
+		.carousel-indicators {
+			display: none;
+		}
+		.carousel-caption {
+			bottom: 0;
+			h2 {
+				font-size: 2.25em;
+			}
+			.content {
+				h3 {
+					margin: 5px auto;
+					font-size: 1.5em;
+				}
+			}
+			a {
+				margin: 10px;
+				font-size: 1em;
+			}
+		}
+	}
+	.main-news {
+		h2 {
+			margin: 15px;
+			font-size: 3em;
+		}
+		h3 {
+			padding: 10px;
+			font-size: 2.25em;
+		}
+		img {
+			margin: 10px auto;
+		}
+		p {
+			padding: 15px;
+		}
+	}
+}
+@media screen AND (max-width: 768px) {
+	.carousel {
+		margin-top: 0;
+		.carousel-caption {
+			left: 5%;
+			right: 5%;
+			h2 {
+				font-size: 1.25em;
+			}
+			.poster {
+				display: none;
+			}
+			.content {
+				width: 100%;
+				h3 {
+					margin: 10px auto;
+					font-size: 1em;
+				}
+				p {
+					display: none;
+				}
+			}
+			a {
+				margin: 7px;
+				font-size: 0.75em;
+			}
+		}
+	}
+	.main-news {
+		h2 {
+			margin: 10px;
+			font-size: 2em;
+		}
+		h3 {
+			padding: 5px;
+			font-size: 1.75em;
+		}
+		img {
+			margin: 5px auto;
+		}
+		p {
+			padding: 7px;
+		}
+	}
+}

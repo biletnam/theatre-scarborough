@@ -1,0 +1,26 @@
+.show {
+	p.authors {
+		font-size: 1em;
+		text-align: center;
+	}
+	.row {
+		img {
+			width: 100%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		table.tbNested {
+			margin-left: 20px;
+		}
+		td {
+			text-align: right;
+		}
+		h3 {
+			margin: 20px 0;
+			text-align: left;
+		}
+	}
+	a {
+		text-decoration: underline;
+	}
+}

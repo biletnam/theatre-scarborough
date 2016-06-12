@@ -1,0 +1,75 @@
+#season {
+	> p {
+		a {
+			margin: 0;
+			border: none;
+			border-bottom: 1px solid black;
+		}
+	}
+	a {
+		margin: 0 30px;
+		@include anchor-box (black, white);
+	}
+	.row {
+		> div {
+			height: 400px;
+			margin: 10px 0;
+			padding: 0;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			> div {
+				height: 100%;
+				padding: 20px;
+				> p {
+					margin-bottom: 20px;
+					font-size: 1em;
+				}
+			}
+		}
+	}
+}		
+@media screen AND (max-width: 1200px) {
+	#season {
+		.row {
+			> div {
+				height: 400px;
+			}
+		}
+	}
+}
+@media screen AND (max-width: 992px) {
+	#season {
+		> p {
+			a {
+				display: inline;
+				margin: 0;
+				padding: 0;
+				border: none;
+			}
+		}
+		a {
+			display: block;
+			width: auto;
+			margin: 10px 0;
+		}
+		.row {
+			> div {
+				height: 400px;
+			}
+		}
+	}
+}
+@media screen AND (max-width: 768px) {
+	#season {
+		.row {
+			.col-sm-2 {
+				display: none;
+			}
+			> div {
+				height: 100%;
+			}
+		}
+	}
+}

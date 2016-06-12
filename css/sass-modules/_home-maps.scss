@@ -1,0 +1,60 @@
+#maps {
+	address {
+		font-size: 2.25em;
+		font-style: italic;
+	}
+	#mainMap {
+		height: 450px;
+		margin: 50px 0;
+		border: 5px solid $links;
+	}
+	> p {
+		a {
+			display: inline;
+			padding: 0 5px;
+			color: $links;
+			border-bottom: 2px solid $links;
+			-webkit-transition: all .5s;
+			        transition: all .5s;
+			&:hover {
+				background: $links;
+				color: white;
+			}
+		}
+	}
+	p:last-child {
+		font-size: 1em;
+		text-align: center;
+	}
+}
+@media screen AND (max-width: 1200px) {
+	#maps {
+		h2 {
+			font-size: 3.9em;
+		}
+	}
+}
+@media screen AND (max-width: 992px) {
+	#maps {
+		h2 {
+			font-size: 3.1em;
+		}
+		address {
+			font-size: 2.1em;
+		}
+	}
+}
+@media screen AND (max-width: 768px) {
+	#maps {
+		h2 {
+			font-size: 2.8em;
+		}
+		address {
+			font-size: 1.5em;
+		}
+		#mainMap {
+			height: 375px;
+			margin: 20px 0;
+		}
+	}
+}
